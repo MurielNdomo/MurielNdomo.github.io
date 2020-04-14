@@ -6,24 +6,11 @@
   <title> My covid-19 estimator </title>
   <meta name="description" content="Ui to pass data to estimate for Covid-19">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="css/styles.css">
   <!-- <link rel="manifest" href="site.webmanifest"> -->
   <!-- <link rel="apple-touch-icon" href="icon.png"> -->
   <!-- Place favicon.ico in the root directory -->
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-  <script defer >
-    // 'Getting' data-attributes using dataset
-    $("#contact-submit").click(function(e) {
-      e.preventDefault();
-      var plant = document.getElementById('contact');
-      console.log('attributes values', plant.dataset)
-    }); 
-    
-    
-    </script>
-
   <!-- <meta name="theme-color" content="#fafafa">-->
 </head>
 
@@ -73,6 +60,19 @@
    
     
   </div>
+
+  <script  src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js' type="text/javascript"></script>
+  <script  type="text/javascript"  >
+    $(document).ready(function(){
+    // 'Getting' data-attributes using dataset
+    $("#contact-submit").click(function(e) {
+      e.preventDefault();
+      var plant = document.getElementById('contact');
+      console.log('attributes values', $("input[data-reported-cases]").val())
+    });
+  });
+</script>
+  
 </body>
 
 </html>
