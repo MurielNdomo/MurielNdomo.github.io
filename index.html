@@ -12,6 +12,17 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/styles.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+    // 'Getting' data-attributes using dataset
+    $("#contact-submit").click(function(e) {
+      e.preventDefault();
+      var plant = document.getElementById('contact');
+      console.log('attributes values', plant.dataset)
+    }); 
+    
+    
+    </script>
 
   <!-- <meta name="theme-color" content="#fafafa">-->
 </head>
