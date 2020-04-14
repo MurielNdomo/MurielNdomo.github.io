@@ -83,8 +83,9 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#2196F3;
-	color:#FFF;
+	background:#0099cc;
+	color: #150d0d;
+  font-weight: bold;
 	margin:0 0 5px;
 	padding:10px;
 	font-size:15px;
