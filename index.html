@@ -1,1 +1,52 @@
-Hello World
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- <meta name="theme-color" content="#fafafa">-->
+</head>
+
+<body>
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>Estimate data </h3>
+      <h4>Please fill up following fields!</h4>
+      <fieldset>
+        <input name="population" placeholder="population" type="number" tabindex="1" required autofocus data-population >
+      </fieldset>
+      <fieldset>
+        <input name="timeToElapse" placeholder="time to elapse" type="number" tabindex="2" required data-time-to-elapse>
+      </fieldset>
+      <fieldset>
+        <input name="reportedCases" placeholder="reported cases" type="number" tabindex="3" required data-reported-cases >
+      </fieldset>
+      <fieldset>
+        <input name="totalHospitalBeds" placeholder="total hospital beds" type="number" tabindex="4" required data-total-hospital-beds>
+      </fieldset>
+      <fieldset>
+        <select name="periodType" placeholder="period type" tabindex="5" required data-period-type>
+          <option selected> days </option>
+          <option>  weeks </option>
+          <option> months </option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Estimating" data-go-estimate >Estimate</button>
+      </fieldset>
+    </form>
+   
+    
+  </div>
+</body>
+
+</html>
