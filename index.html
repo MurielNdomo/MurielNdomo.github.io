@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title> My covid-19 estimator </title>
+  <meta name="description" content="Ui to pass data to estimate for Covid-19">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
@@ -22,23 +22,38 @@
       <h3>Estimate data </h3>
       <h4>Please fill up following fields!</h4>
       <fieldset>
-        <input name="population" placeholder="population" type="number" tabindex="1" required autofocus data-population >
+        <label>
+          Population
+          <input name="population" placeholder="population" type="number"  required autofocus data-population >
+        </label>
       </fieldset>
       <fieldset>
-        <input name="timeToElapse" placeholder="time to elapse" type="number" tabindex="2" required data-time-to-elapse>
+        <label>
+          Time to elapse
+          <input name="timeToElapse" placeholder="time to elapse" type="number"  required data-time-to-elapse>
+        </label>
       </fieldset>
       <fieldset>
-        <input name="reportedCases" placeholder="reported cases" type="number" tabindex="3" required data-reported-cases >
+        <label>
+          Reported cases
+          <input name="reportedCases" placeholder="reported cases" type="number"  required data-reported-cases >
+        </label>
       </fieldset>
       <fieldset>
-        <input name="totalHospitalBeds" placeholder="total hospital beds" type="number" tabindex="4" required data-total-hospital-beds>
+        <label>
+          Total hospital beds
+          <input name="totalHospitalBeds" placeholder="total hospital beds" type="number"  required data-total-hospital-beds>
+        </label>
       </fieldset>
       <fieldset>
-        <select name="periodType" placeholder="period type" tabindex="5" required data-period-type>
-          <option selected> days </option>
-          <option>  weeks </option>
-          <option> months </option>
-        </select>
+        <label>
+          Period type
+          <select name="periodType" placeholder="period type"  required data-period-type>
+            <option selected> days </option>
+            <option>  weeks </option>
+            <option> months </option>
+          </select>
+        </label>
       </fieldset>
       <fieldset>
         <button name="submit" type="submit" id="contact-submit" data-submit="...Estimating" data-go-estimate >Estimate</button>
